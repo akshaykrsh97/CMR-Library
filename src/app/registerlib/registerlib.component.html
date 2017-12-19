@@ -1,0 +1,111 @@
+
+
+
+
+<form class="form-horizontal" style="margin-left : 6cm; margin-top : 6cm; "
+[formGroup]="regForm"  (ngSubmit)= "onsubmit()"
+>
+
+
+  <h1 style="margin-left : 6cm; margin-top : 6cm;" > CMRIT Library Registration </h1>
+  
+     <div class="form-group">
+    <label class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" placeholder="Name"
+       formControlName="name"
+      >
+    </div>
+  </div>
+
+  
+  
+  
+  
+  
+  <div class="form-group">
+    <label  class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-6">
+      <input type="email" class="form-control" placeholder="Email"
+      formControlName="email"
+      >
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">USN</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" placeholder="USN"
+       formControlName="usn"
+      >
+    </div>
+  </div>
+
+
+
+   <div class="form-group">
+    <label class="col-sm-2 control-label">College User Id</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" placeholder="College Userid"
+       formControlName="userid"
+      >
+    </div>
+  </div>
+
+   <div class="form-group">
+    <label class="col-sm-2 control-label">Address</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" placeholder="Adderss"
+       formControlName="addr"
+      >
+    </div>
+  </div>
+
+
+
+
+  <div class="form-group">
+    <label  class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-6">
+      <input type="password" class="form-control" placeholder="Password"
+       formControlName="password"
+      >
+
+    </div>
+  </div>
+
+    <div class="form-group">
+    <label class="col-sm-2 control-label">Retype Password</label>
+    <div class="col-sm-6">
+      <input type="password" class="form-control" placeholder="Confirm Password"
+
+      #e
+      (keyup)="checkpass(e.value)">
+      <div *ngIf="data3 == 'Password not Matching'">
+      <div class="alert alert-danger" role="alert" > {{data3}}</div>
+      </div>
+
+       <div *ngIf="data3 == 'Matched'">
+      <div class="alert alert-success" role="alert" > {{data3}}</div>
+      </div>
+
+
+    </div>
+    <div>
+
+    </div>
+  </div>
+  
+  <div class="form-group" >
+    <div class="col-sm-offset-2 col-sm-6">
+      <button type="submit" class="btn btn-success" style="width: 14cm"
+      [disabled]="!regForm.valid"
+       >Register</button>
+      <br><br>
+  <p>  
+  <button type="button" class="btn btn-info" [routerLink]="['/login']">Back</button>
+    </p>
+
+    </div>
+  </div>
+</form>

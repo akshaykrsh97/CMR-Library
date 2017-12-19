@@ -1,0 +1,21 @@
+<ul class="nav nav-pills" style="margin-left: 1cm">
+ <li role="presentation" ><a [routerLink]="['bookdetails']"
+   routerLinkActive = "active">Book Details</a></li>
+  <li role="presentation"><a [routerLink]="['bookrequest']" 
+  routerLinkActive = "active">Requested Books</a></li>
+  <li role="presentation active"><a [routerLink]="['bookborrow']" 
+  routerLinkActive = "active">Book borrowed from Library</a></li>
+  <li role="presentation"><a [routerLink]="['newbookreq']" 
+  routerLinkActive = "active">Request for new Book</a></li>
+</ul>
+
+<hr>
+
+<div>
+
+<!--<app-bookdetail></app-bookdetail>-->
+<!--<app-bookreq></app-bookreq>-->
+<!--<app-bookborr></app-bookborr>-->
+<!--<app-booknewreq></app-booknewreq>-->
+<router-outlet></router-outlet>
+</div>

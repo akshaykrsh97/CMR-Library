@@ -1,0 +1,37 @@
+
+
+
+
+
+<div class="row" >
+  <div class="col-md-3">
+   <ul class="nav nav-pills nav-stacked admin-menu" style="margin-left: 1cm">
+     <br>
+   
+   <li ><a [routerLink]="['profiledetails']" routerLinkActive="active"><i class="glyphicon glyphicon-user"></i> &nbsp;&nbsp;&nbsp;&nbsp;Profile</a></li>
+ 
+    <br>
+  <li ><a [routerLink]="['enterdata']" routerLinkActive="active" ><i class="glyphicon glyphicon-edit"></i>&nbsp;&nbsp;&nbsp;&nbsp;Enter Details(coming soon!!)</a></li>
+    <br>
+ <li ><a [routerLink]="['passwordchange']" routerLinkActive="active"><i class="glyphicon glyphicon-lock"></i>&nbsp;&nbsp;&nbsp;&nbsp;Change Password (coming soon!!)</a></li>
+    <br>
+     <li ><a [routerLink]="['settings']" routerLinkActive="active"><i class="glyphicon glyphicon-cog"></i>&nbsp;&nbsp;&nbsp;&nbsp;Settings(coming soon!!)</a></li>
+    <br>
+      
+       
+  
+</ul>
+  </div>
+
+
+ 
+ <div class="col-md-9">
+    
+<!--<app-profiledata></app-profiledata>
+<app-prochangepass></app-prochangepass>
+<app-proenterdetail></app-proenterdetail>
+<app-prosettings></app-prosettings>-->
+
+<router-outlet></router-outlet>
+ </div>
+</div>

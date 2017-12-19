@@ -1,0 +1,69 @@
+
+  
+<div class="row" >
+  <div class="col-md-2">
+   <ul class="nav nav-pills" style="margin-left: 1cm">
+  <li role="presentation" style="font-size: 250%"> Books Requested <br> </li>
+  <br>
+ <hr>
+  <li role="presentation" class="active" > <a (click)="addi()">Max Req   : 2</a>
+  <br></li>
+  <li role="presentation" class="active" > <a href="">Requested : {{a}}</a>
+  <br></li>
+  <!--<li role="presentation" class="active" > <a href="">Remaining : {{b}}</a>
+  <br></li>-->
+
+  <br><br><br><br>
+  <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ -->
+
+
+</ul>
+  </div>
+
+
+  <div  class="col-md-1">
+       <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ -->
+  </div>
+  
+  
+  
+  <!--*ngIf="it.bookid != 0"-->
+  
+   <!--*ngFor="let it of kool "-->
+  <div class="col-md-4" *ngFor="let it of gotitem " >
+    
+<div class="list-group"  >
+  <a  class="list-group-item">
+    <h3 class="list-group-item-heading">{{it.bookname}}</h3>
+    <br>
+    <h4 class="list-group-item-text">Authors :   {{it.bookauth}}</h4>
+     
+  
+<br>
+  <p class="list-group-item-text">Requested Date and Time:  {{today | date:'medium'}}     </p>
+
+    
+<br>
+
+<div class="btn-group btn-group-justified" role="group" aria-label="...">
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-danger" (click)="removebook(it)" >Remove Request</button>
+  </div>
+ 
+  
+</div>
+  </a>
+</div>
+
+
+
+
+</div>

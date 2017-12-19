@@ -1,0 +1,70 @@
+
+  
+<div class="row" >
+  <div class="col-md-2">
+   <ul class="nav nav-pills" style="margin-left: 1cm">
+  <li role="presentation" style="font-size: 250%"> Books Taken from Library <br> </li>
+  <br>
+ <hr>
+  <li role="presentation" class="active" > <a href="">Max Req   : 2</a>
+  <br></li>
+  <li role="presentation" class="active" > <a href="">Requested : {{a}}</a>
+  <br></li>
+  <li role="presentation" class="active" > <a href="">Remaining : {{b}}</a>
+  <br></li>
+  <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+  
+
+
+</ul>
+  </div>
+
+
+  <div  class="col-md-1">
+       <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+ 
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="col-md-4" *ngFor="let item of books">
+    
+<div class="list-group" >
+  <a  class="list-group-item">
+    <h3 class="list-group-item-heading">{{item.bookname}}</h3>
+    <br>
+    <h4 class="list-group-item-text">Authors :   {{item.bookauth}}</h4>
+     
+    
+    <br>
+    <p class="list-group-item-text">Serial Number :    {{ item.bookid}} </p>
+<br>
+  <p class="list-group-item-text"><u>Book taken Date and Time :{{item.dataoftaken}} </u>    </p>
+
+    
+
+<br>
+  <p class="list-group-item-text"><u>Book returning Date and Time :{{item.dataofrenewal}} </u>    </p>
+
+   <br>
+  <p class="list-group-item-text"><u>Panelty :{{item.panelty}} </u>    </p>
+ panelty
+<br>
+
+<div class="btn-group btn-group-justified" role="group" aria-label="...">
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-danger " (click) = "alertbook()">5 days more</button>
+  </div>
+ 
+  
+</div>
+  </a>
+</div>
+
+
+
+
+</div>
