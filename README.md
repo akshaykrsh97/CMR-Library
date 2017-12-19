@@ -1,4 +1,4 @@
-# LibCMR
+# LibraryCMR
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
 
@@ -29,5 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## About this app 
 
-This app deals with the student dashboard for searching books in library. It also has functionality of requesting available book in library as well as requesting new book for library.
+This app deals with the student dashboard for searching books in library. It also has functionality of requesting available book in library as well as requesting new book for library. App made for `CMR Institute of Technology, Bengalore`. Project ongoing.
 
