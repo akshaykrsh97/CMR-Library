@@ -98,3 +98,46 @@
 	
 	
 	=============================
+<div class="row m-1">
+		<div class="col-md-12 mt-3">	
+			<h3>95 Prod</h3>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th scope="col">Prifix</th>
+						<th scope="col">Trigger Name</th>
+						<th scope="col">Queue length</th>
+						<th scope="col">Queue byte</th>
+						<th scope="col">Last queud time</th>
+						<th scope="col">last retrived time</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Mark</td>
+						<td>dsfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffbfsdffsdfsdfsdd</td>
+						<td>@mdo</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>	
+	</div>
