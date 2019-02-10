@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Integration Server <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Brokers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Triggers</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="row m-1">
+		<div class="col-md-6 mt-3">	
+			<div class="row">
+				<div class="card col-md-3 m-1" style="width: 10rem;">
+					<div class="card-body">
+						<h6 class="card-subtitle mb-2 text-muted">IS_9505</h6>
+						<p class="card-text" style="color:green">UP</p>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="card col-md-3 m-1" style="width: 10rem;">
+					<div class="card-body">
+						<h6 class="card-subtitle mb-2 text-muted">IS_9505</h6>
+						<p class="card-text" style="color:green">UP</p>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="card col-md-3 m-1" style="width: 10rem;">
+					<div class="card-body">
+						<h6 class="card-subtitle mb-2 text-muted">IS_9505</h6>
+						<p class="card-text" style="color:red">DOWN</p>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>	
+		<div class="col-md-6 mt-3">	
+			<div class="card" style="width: 100%">
+				<div class="card-body">
+					<h2 class="card-title">IS_9840</h2>
+					<p class="card-text">Message:  Connected to IS_9840 successfull!!</p>
+					<p class="card-text">Version:  Connected to IS_9840 successfull!!</p>
+					<p class="card-text">Status:  UP</p>
+					
+				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">MWS Link: </li>
+					<!-- <li class="list-group-item">Dapibus ac facilisis in</li> -->
+					<li class="list-group-item">Deployer Link: </li>
+					<!-- <li class="list-group-item">Vestibulum at eros</li> -->
+					<li class="list-group-item">Broker Connected:  </li>
+					<!-- <li class="list-group-item">Vestibulum at eros</li> -->
+				</ul>
+				<div class="card-body">
+					<a href="#" class="card-link">Go to ISPAGE</a>
+					<a href="#" class="card-link">GO to MWS</a>
+				</div>
+			</div>
+		</div>	
+	</div>
